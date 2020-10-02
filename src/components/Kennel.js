@@ -1,5 +1,8 @@
 import React from "react"
 import { AnimalCard } from "./animal/AnimalCard"
+import { EmployeeCard } from "./employee/Employee"
+import { LocationCard } from "./location/Location"
+import { CustomerCard } from "./customer/Customer"
 import "./Kennel.css"
 
 

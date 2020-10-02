@@ -1,4 +1,5 @@
 import React from "react"
+import "./Location.css"
 
 export const LocationCard = () => (
     <section className="location">
