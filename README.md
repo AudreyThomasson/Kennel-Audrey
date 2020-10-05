@@ -1,6 +1,9 @@
 Go to api folder. start json server
 json-server -p 8088 -w database.json
 
+on main folder
+npm i --save react-router-dom
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
