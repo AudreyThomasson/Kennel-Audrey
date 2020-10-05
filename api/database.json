@@ -6,6 +6,20 @@
             "breed": "Poodle",
             "customerId": 1,
             "locationId": 2
+        },
+        {
+            "id": 2,
+            "name": "Lucky",
+            "breed": "Unknown",
+            "customerId": 2,
+            "locationId": 1
+        },
+        {
+            "id": 3,
+            "name": "Biscuit",
+            "breed": "Coonhound",
+            "customerId": 3,
+            "locationId": 1
         }
     ],
     "customers": [
@@ -14,8 +28,39 @@
             "name": "Hannah Hall",
             "address": "7002 Chestnut Ct"
         }
+        {
+            "id": 2,
+            "name": "Audrey Rose",
+            "address": "800 Johnson St"
+        }
+        {
+            "id": 3,
+            "name": "Amanda Brown",
+            "address": "602 Main St"
+        }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Joe Smith",
+            "locationId": 1
+        },
+        {
+            "id": 2,
+            "name": "Jeremy Bakker",
+            "locationId": 1
+        },
+        {
+            "id": 3,
+            "name": "Evelyn Brown",
+            "locationId": 2
+        },
+        {
+            "id": 4,
+            "name": "Emily Hunter",
+            "locationId": 2
+        }
+    ],
     "locations": [
         {
             "id": 1,
