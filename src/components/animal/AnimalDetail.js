@@ -11,7 +11,7 @@ export const AnimalDetail = () => {
 	const [customer, setCustomer] = useState({})
 	
 	const {animalId} = useParams();
-	const history = useHistory();
+	// const history = useHistory();
 
     useEffect(() => {
 		console.log("useEffect", animalId)
