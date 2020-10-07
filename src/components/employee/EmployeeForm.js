@@ -1,8 +1,8 @@
 import React, { useContext, useRef, useEffect } from "react"
+import { useHistory } from 'react-router-dom';
 import { LocationContext } from "../location/LocationProvider"
 import { EmployeeContext } from "../employee/EmployeeProvider"
 import "./Employee.css"
-import { useHistory } from 'react-router-dom';
 
 export const EmployeeForm = (props) => {
     const { addEmployee } = useContext(EmployeeContext)
@@ -21,7 +21,7 @@ export const EmployeeForm = (props) => {
     const location = useRef(null)
 
     /*
-        Get employee state and location state on initialization.
+        Get location state on initialization.
     */
     useEffect(() => {
        getLocations()
