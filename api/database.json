@@ -1,20 +1,6 @@
 {
   "animals": [
     {
-        "name": "Doodles",
-        "breed": "Poodle",
-        "locationId": 2,
-        "customerId": 1,
-        "id": 1
-    },
-    {
-      "name": "Jake",
-      "breed": "Golden Retriever",
-      "locationId": 1,
-      "customerId": 2,
-      "id": 2
-    },
-    {
       "name": "Lucky",
       "breed": "Mix",
       "locationId": 2,
@@ -34,6 +20,13 @@
       "locationId": 1,
       "customerId": 4,
       "id": 5
+    },
+    {
+      "name": "Pickles",
+      "breed": "Beagle",
+      "locationId": 3,
+      "customerId": 4,
+      "id": 6
     }
   ],
   "customers": [
@@ -64,24 +57,29 @@
   ],
   "employees": [
     {
-        "id": 1,
-        "name": "Jeremy Bakker",
-        "locationId": 2
+      "id": 1,
+      "name": "Jeremy Bakker",
+      "locationId": 2
     },
     {
-        "id": 2,
-        "name": "Cici Johnson",
-        "locationId": 2
+      "id": 2,
+      "name": "Cici Johnson",
+      "locationId": 2
     },
     {
-        "id": 3,
-        "name": "Nell Smith",
-        "locationId": 1
+      "id": 3,
+      "name": "Nell Smith",
+      "locationId": 1
     },
     {
-        "id": 4,
-        "name": "Whitney Barfield",
-        "locationId": 1
+      "id": 4,
+      "name": "Whitney Barfield",
+      "locationId": 1
+    },
+    {
+      "name": "Martin",
+      "locationId": 1,
+      "id": 5
     }
   ],
   "locations": [
@@ -94,6 +92,11 @@
       "id": 2,
       "name": "Nashville South",
       "address": "209 Emory Drive"
+    },
+    {
+      "name": "East Nashville",
+      "address": "800 Shelby Ave",
+      "id": 3
     }
   ]
 }
