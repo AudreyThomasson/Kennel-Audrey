@@ -1,76 +1,99 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 2,
-            "name": "Lucky",
-            "breed": "Unknown",
-            "customerId": 2,
-            "locationId": 1
-        },
-        {
-            "id": 3,
-            "name": "Biscuit",
-            "breed": "Coonhound",
-            "customerId": 3,
-            "locationId": 1
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        }
-        {
-            "id": 2,
-            "name": "Audrey Rose",
-            "address": "800 Johnson St"
-        }
-        {
-            "id": 3,
-            "name": "Amanda Brown",
-            "address": "602 Main St"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Joe Smith",
-            "locationId": 1
-        },
-        {
-            "id": 2,
-            "name": "Jeremy Bakker",
-            "locationId": 1
-        },
-        {
-            "id": 3,
-            "name": "Evelyn Brown",
-            "locationId": 2
-        },
-        {
-            "id": 4,
-            "name": "Emily Hunter",
-            "locationId": 2
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+        "name": "Doodles",
+        "breed": "Poodle",
+        "locationId": 2,
+        "customerId": 1,
+        "id": 1
+    },
+    {
+      "name": "Jake",
+      "breed": "Golden Retriever",
+      "locationId": 1,
+      "customerId": 2,
+      "id": 2
+    },
+    {
+      "name": "Lucky",
+      "breed": "Mix",
+      "locationId": 2,
+      "customerId": 3,
+      "id": 3
+    },
+    {
+      "name": "Biscuit",
+      "breed": "Coonhound",
+      "locationId": 1,
+      "customerId": 4,
+      "id": 4
+    },
+    {
+      "name": "Waffle",
+      "breed": "Mutt",
+      "locationId": 1,
+      "customerId": 4,
+      "id": 5
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct",
+      "email": "hannah@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Jerry Perkins",
+      "address": "561 White Blvd",
+      "email": "jerryp@aol.com"
+    },
+    {
+      "id": 3,
+      "name": "Jessica Martin",
+      "address": "600 South Rd",
+      "email": "jessica@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Amanda Smith",
+      "address": "200 Main St",
+      "email": "asmith@gmail.com"
+    }
+  ],
+  "employees": [
+    {
+        "id": 1,
+        "name": "Jeremy Bakker",
+        "locationId": 2
+    },
+    {
+        "id": 2,
+        "name": "Cici Johnson",
+        "locationId": 2
+    },
+    {
+        "id": 3,
+        "name": "Nell Smith",
+        "locationId": 1
+    },
+    {
+        "id": 4,
+        "name": "Whitney Barfield",
+        "locationId": 1
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }
