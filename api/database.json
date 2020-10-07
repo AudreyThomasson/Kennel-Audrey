@@ -40,22 +40,26 @@
     {
       "id": 1,
       "name": "Hannah Hall",
-      "address": "7002 Chestnut Ct"
+      "address": "7002 Chestnut Ct",
+      "email": "hannah@gmail.com"
     },
     {
       "id": 2,
       "name": "Jerry Perkins",
-      "address": "561 White Blvd"
+      "address": "561 White Blvd",
+      "email": "jerryp@aol.com"
     },
     {
       "id": 3,
       "name": "Jessica Martin",
-      "address": "600 South Rd"
+      "address": "600 South Rd",
+      "email": "jessica@gmail.com"
     },
     {
       "id": 4,
       "name": "Amanda Smith",
-      "address": "200 Main St"
+      "address": "200 Main St",
+      "email": "asmith@gmail.com"
     }
   ],
   "employees": [
