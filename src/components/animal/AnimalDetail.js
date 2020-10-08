@@ -37,7 +37,12 @@ export const AnimalDetail = () => {
                             history.push("/animals")
                         })
                 }}>Release Animal
-            </button>       
+            </button>   
+
+           
+            <button onClick={() => {
+                history.push(`/animals/edit/${animal?.id}`)
+            }}>Edit</button>    
 			
             
         </section>

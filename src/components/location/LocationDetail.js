@@ -7,8 +7,8 @@ export const LocationDetail = () => {
     const { getLocationById } = useContext(LocationContext)
 	
 	const [location, setLocation] = useState({})
-	const [employees, setEmployees] = useState({})
-	const [animals, setAnimals] = useState({})
+	const [employees, setEmployees] = useState([])
+	const [animals, setAnimals] = useState([])
 	
 	const {locationId} = useParams();
 	const history = useHistory();

@@ -9,9 +9,10 @@ export const LocationList = () => {
     const { locations, getLocations } = useContext(LocationContext)
     const history = useHistory();
 
+
+
 	//useEffect - reach out to the world for something
     useEffect(() => {
-		console.log("LocationList: useEffect - getLocations")
 		getLocations()
 		
     }, [])
