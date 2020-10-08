@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
+import { useParams, useHistory } from "react-router-dom"
 import { AnimalContext } from "./AnimalProvider"
 import "./Animal.css"
-import { useParams, useHistory } from "react-router-dom"
 
 export const AnimalDetail = () => {
     const { getAnimalById, releaseAnimal } = useContext(AnimalContext)
@@ -37,7 +37,12 @@ export const AnimalDetail = () => {
                             history.push("/animals")
                         })
                 }}>Release Animal
-            </button>       
+            </button>   
+
+           
+            <button onClick={() => {
+                history.push(`/animals/edit/${animal?.id}`)
+            }}>Edit</button>    
 			
             
         </section>

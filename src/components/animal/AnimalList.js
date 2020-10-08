@@ -12,7 +12,6 @@ export const AnimalList = () => {
     
 	//useEffect - reach out to the world for something
     useEffect(() => {
-		console.log("AnimalList: useEffect - getAnimals")
 		getAnimals()
 		
     }, [])
@@ -23,7 +22,7 @@ export const AnimalList = () => {
         <h2>Animals</h2>
 
         <button onClick={() => {history.push("/animals/create")}}>
-                Make Reservation
+                Add Animal
         </button>	
         
         <div className="animals">

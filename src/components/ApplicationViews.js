@@ -1,18 +1,24 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
+
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { LocationProvider } from "./location/LocationProvider"
 import { CustomerProvider } from "./customer/CustomerProvider"
 import { EmployeeProvider } from "./employee/EmployeeProvider"
+
 import { AnimalList } from "./animal/AnimalList"
 import { LocationList } from "./location/LocationList"
 import { CustomerList } from "./customer/CustomerList"
 import { EmployeeList } from "./employee/EmployeeList"
+
 import { AnimalForm } from "./animal/AnimalForm"
 import { EmployeeForm } from "./employee/EmployeeForm"
 import { LocationForm } from "./location/LocationForm"
+
 import { AnimalDetail } from "./animal/AnimalDetail"
+import { EmployeeDetail } from "./employee/EmployeeDetail"
+import { LocationDetail } from "./location/LocationDetail"
 
 export const ApplicationViews = () => {
     return (
@@ -29,33 +35,6 @@ export const ApplicationViews = () => {
                 </Route>
             </AnimalProvider>
             
-            <LocationProvider>
-                <Route exact path="/locations">
-                    <LocationList />
-                </Route>
-            </LocationProvider>
-
-            <CustomerProvider>
-                <Route exact path="/customers">
-                    <CustomerList />
-                </Route>
-            </CustomerProvider>
-
-            <EmployeeProvider>
-                <Route exact path="/employees">
-                    <EmployeeList />
-                </Route>
-            </EmployeeProvider>
-
-            <AnimalProvider>
-                <Route exact path="/animals/detail/:animalId(\d+)">
-                    <AnimalDetail />
-                </Route>
-            </AnimalProvider>
-
-
-
-
             <AnimalProvider>
                 <LocationProvider>
                     <CustomerProvider>
@@ -66,6 +45,59 @@ export const ApplicationViews = () => {
                 </LocationProvider>
             </AnimalProvider>
 
+            <AnimalProvider>
+                <LocationProvider>
+                    <CustomerProvider>
+                        <Route path="/animals/edit/:animalId(\d+)">
+                            <AnimalForm />
+                        </Route>
+                    </CustomerProvider>
+                </LocationProvider>
+            </AnimalProvider>
+            
+
+            <AnimalProvider>
+                <Route exact path="/animals/detail/:animalId(\d+)">
+                    <AnimalDetail />
+                </Route>
+            </AnimalProvider>
+
+
+
+            <LocationProvider>
+                <Route exact path="/locations">
+                    <LocationList />
+                </Route>
+            </LocationProvider>
+
+            <LocationProvider>
+                <Route exact path="/locations/create">
+                    <LocationForm />
+                </Route>
+            </LocationProvider>
+
+            <LocationProvider>
+                    <Route exact path="/locations/detail/:locationId(\d+)">
+                        <LocationDetail />
+                    </Route>
+            </LocationProvider>
+
+
+
+            <CustomerProvider>
+                <Route exact path="/customers">
+                    <CustomerList />
+                </Route>
+            </CustomerProvider>
+
+
+
+            <EmployeeProvider>
+                <Route exact path="/employees">
+                    <EmployeeList />
+                </Route>
+            </EmployeeProvider>
+
             <EmployeeProvider>
                 <LocationProvider>
                         <Route exact path="/employees/create">
@@ -74,15 +106,11 @@ export const ApplicationViews = () => {
                 </LocationProvider>
             </EmployeeProvider>
 
-            
-            <LocationProvider>
-                <Route exact path="/locations/create">
-                    <LocationForm />
+            <EmployeeProvider>
+                <Route exact path="/employees/detail/:employeeId(\d+)">
+                    <EmployeeDetail />
                 </Route>
-            </LocationProvider>
-            
-            
-            
+            </EmployeeProvider>
 
             
         </>
