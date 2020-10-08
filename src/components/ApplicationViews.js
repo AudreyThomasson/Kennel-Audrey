@@ -82,6 +82,12 @@ export const ApplicationViews = () => {
                     </Route>
             </LocationProvider>
 
+            <LocationProvider>
+                <Route path="/locations/edit/:locationId(\d+)">
+                    <LocationForm />
+                </Route>
+            </LocationProvider>
+
 
 
             <CustomerProvider>
